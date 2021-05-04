@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ - IELTS Thanh Loan</title>
+    <link rel="icon" href="images/favicon_ieltsthanhloan.png" sizes="32x32">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/fontawesome/CSS/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <header class="bg-header-footer sticky-top">
+        <div class="container">
+            <nav class="navbar navbar-expand-md navbar-dark py-0">
+                <button class="navbar-toggler border-0 mx-auto my-3 text-light" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i> MENU
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <hr class="d-md-none">   
+                    <ul class="navbar-nav">
+                        <li class="nav-item d-none d-md-block d-lg-none py-2">
+                            <a class="nav-link text-light" href="#"><i class="fas fa-user"></i> Giới thiệu</a>
+                        </li>
+                        <li class="nav-item d-md-none d-lg-block py-2">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="about.html"><i class="fas fa-user"></i> Về Thanh Loan</a>
+                        </li>
+                        <li class="nav-item py-2">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="#"><i class="fas fa-book"></i> Khóa học IELTS Online</a>
+                        </li>
+                        <li class="nav-item py-xl-2">
+                            <a class="nav-link d-none text-light d-xl-block" href="#"><i class="fas fa-book"></i> Sách Academic</a>
+                        </li>
+                        <li class="nav-item py-xl-2">
+                            <a class="nav-link text-light d-none d-xl-block" href="#"><i class="fas fa-book"></i> Sách General Training</a>
+                        </li>
+                        <li class="nav-item dropdown py-2 d-xl-none">
+                            <a class="nav-link dropdown-toggle pl-2 text-light pl-md-0" href="#" id="navbardrop" data-toggle="dropdown">
+                                <i class="fas fa-book"></i> Các loại sách
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item pl-2 pl-md-0" href="#"><i class="fas fa-book"></i> Sách Academic</a>
+                                <a class="dropdown-item pl-2 pl-md-0" href="#"><i class="fas fa-book"></i> Sách General Training</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block py-2 d-lg-none">
+                            <a class="nav-link text-light" href="chua_bai.html"><i class="fas fa-book"></i> Chữa bài</a>
+                        </li>
+                        <li class="nav-item d-block d-md-none py-2 d-lg-block">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="chua_bai.html"><i class="fas fa-book"></i> Chữa bài Writing</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav active">
+                        <li class="position-relative nav-item active py-2 pl-2 pl-md-0">
+                            <nav class="main-nav">
+                                <ul>
+                                    <li class="nav-item"><a class="cd-signup nav-link text-light" href="#0"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item d-md-none d-lg-block py-2">
+                            <div class="search-in-navbar">
+                                <form action="#" method="get" class="">
+                                    <input class="form-control w-100" placeholder="Search...">
+                                    <button type="submit" class="btn btn-light position-absolute d-md-none" style="right:0px; top:0px;">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>  
+            </nav>
+            <div class="cd-user-modal"> 
+                <div class="cd-user-modal-container">
+                    <ul class="cd-switcher">
+                        <li><a href="#0">Đăng nhập</a></li>
+                        <li><a href="#0">Tạo tài khoản mới</a></li>
+                    </ul>
+                    <div id="cd-login"> <!-- log in form -->
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signin-email" type="email" placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <label class="image-replace cd-password" for="signin-password">Mật khẩu</label>
+                                <input class="full-width has-padding has-border" id="signin-password" type="password"  placeholder="Password">
+                                <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <input type="checkbox" id="remember-me" checked>
+                                <label for="remember-me">Nhớ mật khẩu</label>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width" type="submit" value="Login">
+                            </p>
+                            <p class="cd-form-bottom-message"><a href="#0">Quên mật khẩu?</a></p>
+                        </form>
+                        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                    </div> <!-- cd-login -->
+                    <div id="cd-signup"> <!-- sign up form -->
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-username" for="signup-username">Tên đăng nhập</label>
+                                <input class="full-width has-padding has-border" id="signup-username" type="text" placeholder="Username">
+                                <span class="cd-error-message">Error message!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signup-email" type="email" placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <label class="image-replace cd-password" for="signup-password">Mật Khẩu</label>
+                                <input class="full-width has-padding has-border" id="signup-password" type="text"  placeholder="Password">
+                                <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+        
+                            <p class="fieldset">
+                                <input type="checkbox" id="accept-terms">
+                                <label for="accept-terms">Tôi đồng ý với các <a href="#">Điều khoản và dịch vụ</a></label>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Create account">
+                            </p>
+                        </form>
+                        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                    </div> <!-- cd-signup -->
+                    <div id="cd-reset-password"> <!-- reset password form -->
+                        <p class="cd-form-message">Quên mật khẩu? Vui lòng nhập địa chỉ email của bạn tại đây. Bạn sẽ nhận được link cài đặt lại mật khẩu.</p>
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="reset-email" type="email" placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Reset password">
+                            </p>
+                        </form>
+                        <p class="cd-form-bottom-message"><a href="#0">Quay lại đăng nhập</a></p>
+                    </div> <!-- cd-reset-password -->
+                    <a href="#0" class="cd-close-form">Đóng</a>
+                </div> <!-- cd-user-modal-container -->
+            </div> <!-- cd-user-modal -->
+        </div>
+    </header>
+    <section class="container">
+        <div class="row border-bottom border-dark mb-2 mb-md-5 m-lg-0 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 py-3 py-lg-5 text-center">
+                <img src="images/branchIeltsThanhLoan.jpg" class="branchTop">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 pt-3 pb-2 pb-md-5 py-lg-5 text-center">
+                <img src="images/banner-top-website.jpg" class="w-100">
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <div class="row pt-md-5">
+            <div class="col-12 wrap-inner d-flex align-items-center justify-content-center">
+                <div class="text-center animate__animated animate__fadeInUp">
+                    <h1>Chỉ từ 1.2 triệu để đạt IELTS 6.0+</h1>
+                    <button class="btnOutnlineItem"><h6 class="m-0">ĐĂNG KÝ</h6></button>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 row p-3 pt-lg-5">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center pb-3 pb-md-0">
+                    <span class="spanItems"><i class="far fa-credit-card fa-2x"></i></span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 text-center text-md-left">
+                    <h5>LỘ TRÌNH HỌC ONLINE TOÀN DIỆN</h5>
+                    <p>Khoá học phù hợp cho mọi đối tượng từ band 0-6.5+, 
+                        gồm có: Ngữ pháp quan trọng cho IELTS – Từ vựng IELTS theo chủ đề – 
+                        IELTS 4 kỹ năng từ cơ bản đến nâng cao.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 row p-3 pt-lg-5">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center pb-3 pb-md-0">
+                    <span class="spanItems"><i class="far fa-money-bill-alt fa-2x"></i></span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 text-center text-md-left">
+                    <h5>TƯƠNG TÁC VỚI CÔ THANH LOAN</h5>
+                    <p>Cô Thanh Loan trực tiếp chữa bài thực hành của bạn, 
+                        nhắc nhở liên tục trong quá trình học, giải đáp mọi thắc mắc qua kênh online. 
+                        Dù học online, bạn vẫn luôn có người đồng hành.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 row p-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center pb-3 pb-md-0">
+                    <span class="spanItems"><i class="fab fa-rocketchat fa-2x"></i></span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 text-center text-md-left">
+                    <h5>SIÊU TIẾT KIỆM HỌC PHÍ</h5>
+                    <p>Chỉ với mức học phí từ 400k - 2.500.000đ, bạn có một lộ trình hoàn chỉnh để học IELTS online, 
+                        từ kiến thức lý thuyết, bài giảng chi tiết, thực hành trực tuyến, 
+                        chữa bài 1-1 cho phần Writing Speaking và hỗ trợ trực tiếp từ cô Thanh Loan.</p>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 row p-3">
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex align-items-center justify-content-center pb-3 pb-md-0">
+                    <span class="spanItems"><i class="fas fa-user-clock fa-2x"></i></span>
+                </div>
+                <div class="col-12 col-sm-12 col-md-9 col-lg-9 col-xl-9 text-center text-md-left">
+                    <h5>LINH HOẠT THỜI GIAN, ĐỊA ĐIỂM</h5>
+                    <p>Quyền truy cập bài giảng trên mọi thiết bị di động có kết nối Internet tại bất kỳ thời điểm nào, 
+                        và có thể xem bài học nhiều lần, xây dựng thời gian học theo lịch trình cá nhân. 
+                        Không sợ lỡ bài học hay tốn thời gian di chuyển.</p>
+                </div>
+            </div>
+        </div>
+        <!--cac khoa hoc-->
+        <div class="wrap-first-content">
+            <h1 class="text-center pt-3">GÓI HỌC IELTS ONLINE</h1>
+            <p class="px-2 text-center">Bạn lựa chọn gói học phù hợp với nhu cầu và tài chính 
+                & có thể nâng cấp gói học bất kì lúc nào và chỉ trả học phí chênh lệch</p>
+            <div class="row px-2">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="bg-light rounded">
+                        <div class="wrap-title-first-content">
+                            <h3>FOUNDATION</h3>
+                            <p>Làm chủ kỹ năng Nghe Đọc</p>
+                        </div>
+                        <h1 class="text-center text-danger m-2">400.000<sup><small>đ</small></sup></h1>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Listening cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Reading cơ bản</p>
+                        <p class="m-2 py-2"><i class="far fa-check-circle"></i> Không bao gồm Writing, Speaking</p>
+                        <p class="text-center">
+                            <a class="btn btn-danger text-center" href="#">ĐĂNG KÝ</a><br>
+                            <a class="btn" href="#"><small>So sánh chi tiết 3 gói</small></a>   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="bg-light rounded">
+                        <div class="wrap-title-first-content">
+                            <h3>OVERALL</h3>
+                            <p>Mục tiêu IELTS 6.0+ (Hỗ trợ giới hạn)</p>
+                        </div>
+                        <h1 class="text-center text-danger p-2">1.200.000<sup><small>đ</small></sup></h1>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Listening cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Reading cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Writing Task 1, 2 cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Speaking Part 1, 2, 3 cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Chữa bài Writing Speaking giới hạn</p>
+                        <p class="m-2 py-2"><i class="far fa-check-circle"></i> <b>TẶNG</b>: Series bài giảng Ngữ pháp</p>
+                        <p class="text-center">
+                            <a class="btn btn-danger text-center" href="#">ĐĂNG KÝ</a><br>
+                            <a class="btn" href="#"><small>So sánh chi tiết 3 gói</small></a>   
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4">
+                    <div class="bg-light rounded">
+                        <div class="wrap-title-first-content">
+                            <h3>OVERALL PLUS</h3>
+                            <p>Mục tiêu IELTS 6.0+ (Hỗ trợ không giới hạn)</p>
+                        </div>
+                        <h1 class="text-center text-danger p-2">2.500.000<sup><small>đ</small></sup></h1>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Listening cơ bản và luyện đề</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Reading cơ bản và luyện đề</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Writing Task 1, 2 cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Speaking Part 1, 2, 3 cơ bản</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> Chữa bài Writing Speaking vô hạn</p>
+                        <p class="border-bottom border-dark py-2 m-2"><i class="far fa-check-circle"></i> <b>TẶNG</b>: Series bài giảng Ngữ pháp</p>
+                        <p class="m-2 py-2"><i class="far fa-check-circle"></i> <b>TẶNG</b>: 2 cuốn Ebook Từ vựng
+                        </p>
+                        <p class="text-center">
+                            <a class="btn btn-danger text-center" href="#">ĐĂNG KÝ</a><br>
+                            <a class="btn" href="#"><small>So sánh chi tiết 3 gói</small></a>   
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div> <!--end cac khoa hoc-->
+
+        <!--so sanh-->
+        <h1 class="text-center text-uppercase p-5">So sánh 3 gói học ielts online</h1>
+        <table style="width:100%">
+            <tr>
+                <th colspan="3" rowspan="2" class="text-light text-center bgMainColor">
+                    <h5 class="pt-5">ĐẶC ĐIỂM</h5>
+                </th>
+                <th class="bgMainColor px-4 pb-3 pt-0 text-light text-center">FOUNDATION</th>
+                <th class="bgMainColor px-4 pb-3 pt-0 text-light text-center">OVERALL</th>
+                <th class="bgMainColor px-4 pb-3 pt-0 text-light text-center">OVERALL</th>
+            </tr>
+            <tr>
+                <td class="text-center text-danger">400,000đ</td>
+                <td class="text-center text-danger">1,200,000đ</td>
+                <td class="text-center text-danger">2,500,000đ</td>
+            </tr>
+            <tr>
+                <td colspan="3">Listening: 18 bài giảng hướng dẫn học theo dạng câu hỏi</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Listening: 110 bài thực hành theo dạng câu hỏi (kèm đáp án chi tiết)</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Reading: 20 bài giảng về chiến thuật trả lời theo dạng câu hỏi</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Reading: 100 bài thực hành theo dạng câu hỏi (kèm đáp án chi tiết)</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Writing: 61 bài giảng Task 1 & 2 từ viết câu, viết đoạn và cuối cùng là viết bài</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Writing: Chữa bài Online</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center">7 bài</td>
+                <td class="text-center">Không giới hạn</td>
+            </tr>
+            <tr>
+                <td colspan="3">Speaking: 18 bài giảng hướng dẫn trả lời các dạng câu hỏi trong Part 1, 2, 3</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Speaking: Chữa bài Online</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center">8 bài</td>
+                <td class="text-center">Không giới hạn</td>
+            </tr>
+            <tr>
+                <td colspan="3">Grammar: 20 bài giảng ôn tập các điểm ngữ pháp quan trọng nhất cho bài thi IELTS</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Grammar: 100 bài thực hành các điểm ngữ pháp trong bài thi IELTS (kèm đáp án)</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Vocabulary: Sách ebook Từ vựng và Ý tưởng theo chủ đề cho Speaking, Writing</td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-times text-danger"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Thời hạn truy cập</td>
+                <td class="text-center">12 tháng</td>
+                <td class="text-center">24 tháng</td>
+                <td class="text-center">Không giới hạn</td>
+            </tr>
+            <tr>
+                <td colspan="3">Handout tương ứng với các bài giảng online</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Giải đáp thắc mắc qua các kênh online</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <td colspan="3">Email nhắc nhở học tập và cập nhật xu hướng đề thi</td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+                <td class="text-center"><i class="fas fa-check text-success"></i></td>
+            </tr>
+            <tr>
+                <th colspan="3"></th>
+                <td class="text-center"><a class="btn btn-danger text-center" style="width: 95px;" href="#">ĐĂNG KÝ</a><br></td>
+                <td class="text-center"><a class="btn btn-danger text-center" style="width: 95px;" href="#">ĐĂNG KÝ</a><br></td>
+                <td class="text-center"><a class="btn btn-danger text-center" style="width: 95px;" href="#">ĐĂNG KÝ</a><br></td>
+            </tr>
+          </table>
+    </div><!--end so sanh-->
+
+    <!--FAQ-->
+    <h1 class="pt-4 my-5 text-center"> CÂU HỎI THƯỜNG GẶP</h1>  
+    <div class="container mb-5">      
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header">
+                    <a class="card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseOne">
+                        Tôi có thể xem trước một số nội dung tham khảo không?
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse show" data-parent="#accordion">
+                    <div class="card-body">
+                        <p>Có thể. Bạn tham khảo các nội dung học thử mà cô cung cấp như sau: </p>
+                                <p>– Bài giảng tham khảo cho phần Listening tại đây<br>
+                                – Bài giảng tham khảo cho phần Reading tại đây <br>
+                                – Bài giảng tham khảo cho phần Writing Task 1 tại đây và Writing Task 2 tại đây <br>
+                                – Bài giảng tham khảo cho phần Speaking tại đây <br>
+                                – Bài giảng tham khảo cho phần Grammar tại đây <br>
+                                – Bài chữa mẫu tham khảo cho kỹ năng Writing tại đây <br>
+                                – Bài chữa mẫu tham khảo cho kỹ năng Speaking tại đây <br>
+                                – Giáo trình đi kèm với các bài giảng online có thể tham khảo tại đây<br>
+                                – Ebook Từ vựng & Ý tưởng IELTS Writing đọc thử tại đây và ebook Từ vựng & Ý tưởng IELTS Speaking đọc thử tại đây</p>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseTwo">
+                        Tôi có thể chuyển giữa các gói học không?
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Có. Bạn có thể nâng cấp gói học IELTS online bất kì lúc nào.
+                        Bạn chỉ cần trả phần học phí chênh lệch.<br>
+                        <i>Ví dụ bạn đang ở gói Overall (1.200.000) và muốn nâng cấp lên gói Overall Plus (2.500.000), 
+                            ban chỉ cần đóng học học phí là 1.300.000
+                        </i>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseThree">
+                        Tôi đăng ký và thanh toán gói học như thế nào?
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Bước 1: Lựa chọn đăng ký mua gói khóa học trên webiste<br>
+                        Bước 2: Thanh toán học phí gói khóa học qua chuyển khoản ngân hàng, Momo…<br> 
+                        Bước 3: Truy cập tài khoản đã đăng ký là có thể học được luôn
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header">
+                    <a class="collapsed card-link text-dark font-weight-bold" data-toggle="collapse" href="#collapseFour">
+                        Tôi liên hệ với ai khi cần hỗ trợ?
+                    </a>
+                </div>
+                <div id="collapseFour" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                        Bạn liên hệ qua các kênh sau đây: 
+                        – <a href="#" class="linkColor">Fanpage IELTS Thanh Loan</a>
+                        – Email: hi@ielts-thanhloan.com 
+                        – Zalo/ĐT: 0974824724 (cô Loan) 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div><!--end faq-->
+
+    <!--feedback-->
+    <div class="container my-5">
+        <div class="wrap-second-inner row">
+            <h1 class="col-12 text-primary text-uppercase py-4 text-center">học viên đánh giá về khóa học</h1>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-4">
+                <p>"Đầu tiên là quá ấn tượng với cô Loan vì cô nhiệt tình quá. 
+                    Tưởng đăng ký online rồi học sao thì học, 
+                    ai dè thình thoảng cô lại nhắn tin qua facebook nhắc nhở, 
+                    và trong email chữa bài cũng hay động viên. 
+                    Nói chung thiện cảm rất tốt."
+                </p>
+                <span class="text-uppercase text-primary font-weight-bold"><img src="images/avatar/client_1.jpeg" class="avatar"> quỳnh mai</span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-4">
+                <p>"Cô giảng bài đi thẳng vào trọng tâm bài học, chữa bài cũng rất nhanh và chi tiết.
+                        Có hôm nhắn tin trên page lúc gần 11 giờ đêm rồi mà vẫn thấy cô trả lời luôn, nhiệt tình thật. 
+                    Thiết kế web bình thường nhưng đủ chức năng"
+                </p>
+                <span class="text-uppercase text-primary font-weight-bold"><img src="images/avatar/client_2.jpeg" class="avatar"> thúy</span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-4">
+                <p>"Bài học hay, giáo trình và thực hành cũng đầy đủ, 
+                    bài chữa của cô thì khỏi phải bàn luôn, quá kỹ càng. 
+                    Quan trọng nhất là phải chăm chỉ học, 
+                    còn nếu ý thức cá nhân đã tốt rồi thì chỉ cần khoá học của cô Loan thôi là đủ"
+                </p>
+                <span class="text-uppercase text-primary font-weight-bold"><img src="images/avatar/client_3.jpeg" class="avatar"> hảo vũ</span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 my-4">
+                <p>"Học phí quá thấp so với những gì được dạy.
+                        Các video bài học rất chi tiết và hệ thống. 
+                    Cô giáo có phương pháp giảng dạy logic, 
+                    chia điểm kiến thức rõ ràng và dễ theo dõi. 
+                    Chữa bài được luôn trong ngày thì tuyệt, 
+                    chờ 1-2 ngày cảm thấy mong lắm luôn!"
+                </p>
+                <span class="text-uppercase text-primary font-weight-bold"><img src="images/avatar/client_4.png" class="avatar"> long thủy</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container pt-5 pb-4">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-center text-light">Giới thiệu</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-user"></i> Về Thanh Loan</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-question-circle"></i> Câu hỏi thường gặp</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="far fa-money-bill-alt"></i> Hướng dẫn thanh toán</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-envelope"></i> Liên hệ IELTS Thanh Loan</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-center text-light">Sản phẩm/Dịch vụ</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Khóa học IELTS Online</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Sách IELTS Academic</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Sách IELTS General Training</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Dịch vụ chữa bài IELTS Writing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-light text-center">Social Media</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-share-square"></i> IELTS Thanh Loan trên Youtube</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-share-square"></i> IELTS Thanh Loan trên Facebook</a><br></li>
+                        <li><img src="images/logoSaleNoti.png"></li>
+                    </ul>
+                </div>    
+            </div>
+        </div>
+        <div class="wrap-footer">
+            <p class="py-3">Bản quyền © 2021 - IELTS Thanh Loan</p>
+        </div>
+    </footer>
+    <script src="js/signup.js"></script>
+</body>
+</html>
