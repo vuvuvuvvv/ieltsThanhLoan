@@ -22,7 +22,7 @@ jQuery(document).ready(function($){
 			//show modal layer
 			$form_modal.addClass('is-visible');	
 			//show the selected form
-			( $(event.target).is('.cd-signup') ) ? signup_selected() : login_selected();
+			( $(event.target).is('.cd-login') ) ? signup_selected() : login_selected();
 		}
 
 	});
