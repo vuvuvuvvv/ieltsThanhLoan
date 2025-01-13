@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Về Thanh Loan - IELTS Thanh Loan</title>
+    <link rel="icon" href="images/favicon.PNG" sizes="32x32">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/loginSignup.css">
+    <link rel="stylesheet" href="css/fontawesome/CSS/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/detail_book.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-header-footer sticky-top">
+        <div class="container my-0">
+            <nav class="navbar navbar-expand-md navbar-dark py-0">
+                <button class="navbar-toggler border-0 mx-auto my-3 text-light" type="button" data-toggle="collapse"
+                    data-target="#collapsibleNavbar">
+                    <i class="fas fa-bars"></i> MENU
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <hr class="d-md-none">
+                    <ul class="navbar-nav w-nav">
+                        <li class="nav-item d-none d-md-block d-lg-none py-2 navItems mx-auto">
+                            <a class="nav-link text-light" href="about.html"><i class="fas fa-user"></i> Giới
+                                thiệu</a>
+                        </li>
+                        <li class="nav-item d-md-none d-lg-block py-2 navItems ml-md-2 mr-auto">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="about.html"><i class="fas fa-user"></i>
+                                Về Thanh Loan</a>
+                        </li>
+                        <li class="nav-item py-2 navItems ml-md-auto d-md-none d-lg-block">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="khoa_hoc.html"><i class="fas fa-book"></i>
+                                Khóa học IELTS Online</a>
+                        </li>
+                        <li class="nav-item py-2 navItems ml-md-auto d-none d-md-block d-lg-none">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="khoa_hoc.html"><i class="fas fa-book"></i>
+                                Học IELTS Online</a>
+                        </li>
+                        <li class="nav-item dropdown py-xl-2 navItems mx-md-auto my-auto">
+                            <a class="nav-link dropdown-toggle pl-2 text-light pl-md-0" href="#" id="navbardrop"
+                                data-toggle="dropdown">
+                                <i class="fas fa-book"></i> Tài liệu
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item pl-2" href="academic_book.html"><i class="fas fa-book"></i>
+                                    Sách Academic</a>
+                                <a class="dropdown-item pl-2" href="general_training_book.html"><i
+                                        class="fas fa-book"></i> Sách General Training</a>
+                            </div>
+                        </li>
+                        <li class="nav-item d-none d-md-block py-2 d-lg-none navItems mx-auto">
+                            <a class="nav-link text-light" href="cart.html"><i class="fas fa-shopping-cart"></i> Giỏ hàng</a>
+                        </li>
+                        <li class="nav-item d-block d-md-none py-2 d-lg-block navItems mx-md-auto">
+                            <a class="nav-link text-light pl-2 pl-md-0" href="cart.html"><i class="fas fa-shopping-cart"></i>
+                                Giỏ hàng</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav active mx-auto">
+                        <li class="position-relative nav-item active py-2 pl-2 pl-md-0 navItems">
+                            <nav class="main-nav">
+                                <ul>
+                                    <li class="nav-item"><a class="cd-signup nav-link text-light d-none d-md-block"
+                                            href="#0"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a></li>
+                                    <li class="nav-item"><a class="cd-signup nav-link text-light d-md-none"
+                                            href="signin_signup.html"><i class="fas fa-sign-in-alt"></i> Đăng nhập</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav mr-2 ml-auto">
+                        <li class="nav-item d-md-none d-lg-block py-2">
+                            <div class="search-in-navbar">
+                                <form action="#" method="get" class="">
+                                    <input class="form-control w-100" placeholder="Search...">
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="cd-user-modal">
+                <div class="cd-user-modal-container">
+                    <ul class="cd-switcher">
+                        <li><a href="#0">Đăng nhập</a></li>
+                        <li><a href="#0">Tạo tài khoản mới</a></li>
+                    </ul>
+                    <div id="cd-login"> <!-- log in form -->
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="signin-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signin-email" type="email"
+                                    placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <label class="image-replace cd-password" for="signin-password">Mật khẩu</label>
+                                <input class="full-width has-padding has-border" id="signin-password" type="password"
+                                    placeholder="Password">
+                                <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <input type="checkbox" id="remember-me" checked>
+                                <label for="remember-me">Nhớ mật khẩu</label>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width" type="submit" value="Login">
+                            </p>
+                            <p class="cd-form-bottom-message"><a href="#0">Quên mật khẩu?</a></p>
+                        </form>
+                        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                    </div> <!-- cd-login -->
+                    <div id="cd-signup"> <!-- sign up form -->
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-username" for="signup-username">Tên đăng nhập</label>
+                                <input class="full-width has-padding has-border" id="signup-username" type="text"
+                                    placeholder="Tên">
+                                <span class="cd-error-message">Error message!</span>
+                            </p>
+
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="signup-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="signup-email" type="email"
+                                    placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+
+                            <p class="fieldset">
+                                <label class="image-replace cd-password" for="signup-password">Mật Khẩu</label>
+                                <input class="full-width has-padding has-border" id="signup-password" type="text"
+                                    placeholder="Password">
+                                <a href="#0" class="hide-password"><i class="fas fa-eye"></i></a>
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+
+                            <p class="fieldset">
+                                <input type="checkbox" id="accept-terms">
+                                <label for="accept-terms">Tôi đồng ý với các <a href="#">Điều khoản và dịch
+                                        vụ</a></label>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Create account">
+                            </p>
+                        </form>
+                        <!-- <a href="#0" class="cd-close-form">Close</a> -->
+                    </div> <!-- cd-signup -->
+                    <div id="cd-reset-password"> <!-- reset password form -->
+                        <p class="cd-form-message">Quên mật khẩu? Vui lòng nhập địa chỉ email của bạn tại đây.
+                            Bạn sẽ nhận được link cài đặt lại mật khẩu.</p>
+                        <form class="cd-form">
+                            <p class="fieldset">
+                                <label class="image-replace cd-email" for="reset-email">E-mail</label>
+                                <input class="full-width has-padding has-border" id="reset-email" type="email"
+                                    placeholder="E-mail">
+                                <span class="cd-error-message">Error message here!</span>
+                            </p>
+                            <p class="fieldset">
+                                <input class="full-width has-padding" type="submit" value="Reset password">
+                            </p>
+                        </form>
+                        <p class="cd-form-bottom-message"><a href="#0">Quay lại đăng nhập</a></p>
+                    </div> <!-- cd-reset-password -->
+                    <a href="#0" class="cd-close-form">Đóng</a>
+                </div> <!-- cd-user-modal-container -->
+            </div> <!-- cd-user-modal -->
+        </div>
+    </header>
+    <section class="container">
+        <div class="row border-bottom border-dark mb-2 mb-md-5 m-lg-0 d-flex align-items-center justify-content-center">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 py-3 py-lg-5 text-center">
+                <img src="images/logo.jpg" class="branchTop d-none d-lg-block">
+                <img src="images/branchIelts.jpg" class="branchTop d-lg-none">
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 pt-3 pb-2 pb-md-5 py-lg-5 text-center">
+                <img src="images/banner-top-website.jpg" class="w-100">
+            </div>
+        </div>
+    </section>
+    <div class="container pt-3">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="w-100 row">
+
+                    <div class="col-xl-4 text-center">
+                        <img src="images/academic/a2.jpg" alt="Bìa sách" class="book-image">
+                        <p class="mt-3">
+                            <span class="badge badge-category">IELTS</span>
+                            <span class="badge badge-category">Học thuật</span>
+                        </p>
+                    </div>
+                    <div class="col-xl-8">
+                        <h1 class="mb-3">Hướng dẫn học IELTS Reading cho người mới bắt đầu (Academic)</h1>
+                        <p><strong>Tác giả:</strong> <strong>IELTS Thanh Loan</strong></p>
+                        <p><strong>Giá:</strong> <span class="text-danger">359,000 VNĐ</span></p>
+                        <p><strong>ISBN:</strong> 978-1-2345-6789-0</p>
+                        <p><strong>Ngày xuất bản:</strong> Tháng 1 năm 2025</p>
+                        <p><strong>Nhà xuất bản:</strong> IELTS Publishing Co.</p>
+                        <hr>
+                        <h3 class="section-title">Giới thiệu sách</h3>
+                        <p>
+                            Cuốn sách này là hướng dẫn toàn diện dành cho người mới bắt đầu ôn thi kỹ năng Đọc trong kỳ
+                            thi
+                            IELTS (Academic).
+                            Sách cung cấp các chiến lược từng bước, bài tập mẫu, và các mẹo để cải thiện kỹ năng đọc và
+                            quản
+                            lý thời gian.
+                            Lý tưởng cho những ai đặt mục tiêu đạt Band 6.0 trở lên.
+                        </p>
+                        <ul class="mb-4">
+                            <li>Giải thích chi tiết các loại câu hỏi thường gặp</li>
+                            <li>Đoạn văn mẫu kèm lời giải</li>
+                            <li>Mẹo quản lý thời gian khi làm bài thi</li>
+                        </ul>
+                        <a href="#" class="text-light btnViewMore mx-auto py-3"><i class="fas fa-shopping-cart"></i> Thêm vào giỏ hàng</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-xl-4 d-none d-md-block">
+                <h6 class="w-100 bgMainColor text-light py-3 text-center">Theo dõi qua mạng xã hội</h6>
+                <div class="text-center my-4">
+                    <a class="linkColor pr-3" href="#"><i class="fab fa-facebook-f fa-2x"></i></a>
+                    <a class="linkColor pl-3" href="#"><i class="fab fa-youtube fa-2x"></i></a>
+                </div>
+                <h6 class="w-100 bgMainColor text-light py-3 text-center">Sách IELTS Thanh Loan</h6>
+                <img src="images/banner-sidebar.jpg" class="w-100 p-3 pb-5">
+                <form action="#" method="GET">
+                    <input type="text" name="information" class="form-control w-100 py-4" placeholder="Search...">
+                </form>
+                <h6 class="w-100 bgMainColor text-light py-3 text-center my-4">Chữa bài IELTS Writing</h6>
+                <img src="images/4fe782cd009bf0c5a98a.jpg" class="w-100 p-3 pb-5">
+                <h6 class="w-100 bgMainColor text-light py-3 text-center">Bài viết mới nhất</h6>
+                <ul>
+                    <li class="linkBanner"><a href="#"><i class="fas fa-share-square text-danger"></i> Từ vựng và ý
+                            tưởng IELTS Speaking theo chủ đề - Sports</a> 19/02/2021</li>
+                    <li class="linkBanner"><a href="#"><i class="fas fa-share-square text-danger"></i> Từ vựng và ý
+                            tưởng IELTS Speaking theo chủ đề - Newspapers & Magazines</a> 19/02/2021</li>
+                    <li class="linkBanner"><a href="#"><i class="fas fa-share-square text-danger"></i> Từ vựng và ý
+                            tưởng IELTS Speaking theo chủ đề - Colours</a> 19/02/2021</li>
+                    <li class="linkBanner"><a href="#"><i class="fas fa-share-square text-danger"></i> Từ vựng và ý
+                            tưởng IELTS Speaking theo chủ đề - Famous People</a> 19/02/2021</li>
+                    <li class="linkBanner"><a href="#"><i class="fas fa-share-square text-danger"></i> Từ vựng và ý
+                            tưởng IELTS Speaking theo chủ đề - Reading</a> 19/02/2021</li>
+                </ul>
+                <h6 class="w-100 bgMainColor text-light py-3 text-center">Khóa học IELTS online</h6>
+                <img src="images/Banner-moi-ngay.jpg" class="w-100 p-3 pb-5 fixedBanner">
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="fb-comments" data-href="https://vuvuvuvvv.github.io/ieltsThanhLoan/" data-width="700" data-numposts="5">
+    </div>
+    <footer>
+        <div class="container pt-5 pb-4 px-0">
+            <div class="row">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-center text-light">Giới thiệu</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-user"></i> Về Thanh Loan</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-question-circle"></i> Câu hỏi thường
+                                gặp</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="far fa-money-bill-alt"></i> Hướng dẫn thanh
+                                toán</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-envelope"></i> Liên hệ IELTS Thanh
+                                Loan</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-center text-light">Sản phẩm/Dịch vụ</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Khóa học IELTS Online</a><br>
+                        </li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Sách IELTS Academic</a><br>
+                        </li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Sách IELTS General
+                                Training</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-book"></i> Dịch vụ chữa bài IELTS
+                                Writing</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4">
+                    <p class="p-2 bg-header-footer text-light text-center">Social Media</p>
+                    <ul>
+                        <li class="link-footer"><a href="#"><i class="fas fa-share-square"></i> IELTS Thanh Loan trên
+                                Youtube</a><br></li>
+                        <li class="link-footer"><a href="#"><i class="fas fa-share-square"></i> IELTS Thanh Loan trên
+                                Facebook</a><br></li>
+                        <li><img src="images/logoSaleNoti.png"></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="wrap-footer m-0">
+            <p class="py-3 m-0">Bản quyền © 2021 - IELTS Thanh Loan</p>
+        </div>
+    </footer>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v10.0"
+        nonce="oeRsBP8o"></script>
+    <script src="js/signup.js"></script>
+    <script>
+        function openCity(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        document.getElementById("defaultOpen").click();
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+.book-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.btn-custom {
+    background-color: #5a67d8;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn-custom:hover {
+    background-color: #434c9c;
+}
+.section-title {
+    font-size: 1.5rem;
+    color: #5a67d8;
+    margin-bottom: 1rem;
+}
+.container {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.badge-category {
+    background-color: #f56565;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}

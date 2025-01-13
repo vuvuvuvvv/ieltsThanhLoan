@@ -1,0 +1,22 @@
+.cart-table img {
+    width: 80px;
+    height: auto;
+    border-radius: 5px;
+}
+.btn-remove {
+    background-color: #e3342f;
+    color: white;
+    border-radius: 50px;
+}
+.btn-remove:hover {
+    background-color: #cc1f1a;
+}
+.btn-pay {
+    background-color: #38c172;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+.btn-pay:hover {
+    background-color: #2d995b;
+}
